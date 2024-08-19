@@ -93,7 +93,7 @@
 
                     <div class="form-group">
                         <label for="emailAddress">Email Address</label>
-                        <InputText id="emailAddress" @bind-Value="EmailAddress" class="form-control compact-input" />
+                        <InputText id="emailAddress" @bind-Value="EmailAddress" required class="form-control small-input" />
                         <ValidationMessage For="@(() => EmailAddress)" />
                     </div>
                     <button type="submit" class="btn btn-success" @onclick="RegisterForEvent">Book Seat</button>
