@@ -1,4 +1,4 @@
-﻿@* @page "/edit-event/{Id:int?}"
+﻿@page "/edit-event/{Id:int?}"
 @using EventSystem.Data
 @using EventSystem.Models
 @inject ApplicationDbContext DbContext
@@ -108,7 +108,6 @@
             DbContext.Events.Update(Event);
         }
         await DbContext.SaveChangesAsync();
-        Navigation.NavigateTo("/events");
+        Navigation.NavigateTo("/manage-events");
     }
 }
- *@
